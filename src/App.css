@@ -363,11 +363,23 @@ button:hover {
     font-size: 14px;
   }
 
-    .content, .content1, .content2 {
-    animation: none;
+ .content,
+  .content1,
+  .content2,
+  h1,
+  p {
+    animation: none !important;
+    animation-name: none !important;
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 0 !important;
+    animation-play-state: paused !important;
   }
    .hero {
     min-height: auto;
     justify-content: flex-start;
   }
+}
+body.no-anim * {
+  animation: none !important;
 }
