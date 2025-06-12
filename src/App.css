@@ -331,6 +331,7 @@ button:hover {
     height: auto;
     position: static;
     opacity: 1;
+    margin: 10px auto;
   }
 
   .details-box h2 { font-size: 18px; }
@@ -360,5 +361,13 @@ button:hover {
     padding: 15px;
     margin: 20px auto;
     font-size: 14px;
+  }
+
+    .content, .content1, .content2 {
+    animation: none;
+  }
+   .hero {
+    min-height: auto;
+    justify-content: flex-start;
   }
 }
