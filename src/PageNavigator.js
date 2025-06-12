@@ -122,7 +122,7 @@ const PageNavigator = ({ page, setPage }) => {
 
    <p>
   Please visit my all recent works on this google drive link - 
-  <a href="https://drive.google.com/drive/folders/1_ohDny3DW2JuVLu1ftpibJYZarQN7hFb" target="_blank">
+  <a href="https://drive.google.com/drive/folders/1_ohDny3DW2JuVLu1ftpibJYZarQN7hFb" target="_blank" rel="noreferrer">
     Click Here
   </a>.
 </p>
