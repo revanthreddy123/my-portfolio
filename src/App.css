@@ -250,7 +250,7 @@ button:hover {
   color: #f0f0f0;
   font-size: 16px;
   line-height: 1.5;
-  padding: 6px 0;
+  padding: 1px 0;
   text-align: left;
   font-family: 'Poppins', sans-serif; /* Or any modern font */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
@@ -327,6 +327,7 @@ button:hover {
   .download-btn { padding: 10px; font-size: 1em; }
 
   .details-box {
+    max-height: 25vh;
     width: 220px;
     height: auto;
     position: static;
@@ -378,6 +379,17 @@ button:hover {
    .hero {
     min-height: auto;
     justify-content: flex-start;
+  }
+  p {
+    margin-bottom: 1px;  /* Adds vertical space between paragraphs */
+    padding: 0 5px;      /* Optional: keep some horizontal padding */
+    font-size: 1em;
+    text-align: center;
+  }
+
+  /* Optional: remove last paragraph’s bottom margin */
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 body.no-anim * {
