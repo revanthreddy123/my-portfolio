@@ -2,6 +2,8 @@
 body, html, #root {
   margin: 0;
   padding: 0;
+  height: 100%;
+ 
  
  font-family: 'Times New Roman', Times, serif;
 
@@ -363,6 +365,35 @@ button:hover {
     margin: 20px auto;
     font-size: 14px;
   }
+.hero {
+    display: flex;
+    justify-content: center;        /* ✅ vertical centering */
+    align-items: center;            /* ✅ horizontal centering */
+    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .responsive-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    /* ✅ Remove this if present: margin: auto; */
+  }
+  .content2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
 
  .content,
   .content1,
