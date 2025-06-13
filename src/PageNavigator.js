@@ -97,7 +97,7 @@ const PageNavigator = ({ page, setPage }) => {
                 <h2>Work Experience</h2>
                 <p>DLF - Intern Architect - 2017-2018</p>
                 <p>Neo Frames - UI/UX Developer & 3D Visualization - 2018 -2023</p>
-                 <p>PeopleTech group - Outsourcing Architect - 2023 - 2024</p>
+                 <p>PeopleTech Group - Part-Time Architect - 2023 - 2024</p>
               </div>
            
           </>
@@ -147,10 +147,14 @@ const PageNavigator = ({ page, setPage }) => {
     <div className="content2">
       <div className="content">{renderContent()}</div>
       <div>
-         {page > 1 && <button onClick={prevPage}>Back</button>}
-        {page < 5 && <button onClick={nextPage}>Next</button>}
-       
-      </div>
+  {page > 1 && <button onClick={prevPage}>Back</button>}
+  
+  {page < 5 && (
+    <button onClick={nextPage}>
+      {page === 1 ? 'Get Started' : 'Next'}
+    </button>
+  )}
+</div>
     </div>
   );
 };
