@@ -384,6 +384,8 @@ button:hover {
     text-align: center;
     box-sizing: border-box;
     /* ✅ Remove this if present: margin: auto; */
+    padding-bottom: 80px;
+
   }
   .content2 {
     width: 100%;
